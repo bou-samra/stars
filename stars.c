@@ -40,14 +40,14 @@ int main(int argc, char **argv)			/* allow StarAmount as paramater */
 
 	    const char* filename = argv[1];	/* parse command line arguments */
   if (argc != 2){				/* display usage if less than 2 arguments passed */
-      printf("Usage: stars [<quantity>]\n\
+      printf("Usage: stars [<quantity>|OPTION]\n\
 stars --help for help\n");
       return 1;
     }						// display usage, then exit
 
 if(!strcmp(filename, "--about")) {
     printf("Paralax sidescrolling starfield\n\
-Jason Bou-Samra 20/03/2024.\n\n"); return 0;
+Jason Bou-Samra 28/03/2024.\n\n"); return 0;
     }						/* display about, then exit */
 
 if(!strcmp (filename,  "--help")) {
